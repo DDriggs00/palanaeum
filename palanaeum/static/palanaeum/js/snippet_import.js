@@ -78,7 +78,7 @@ function parse_snippet_from_table_row(row) {
 	const start_time = (start_hours * 60 * 60) + (start_minutes * 60) + start_seconds;
 
 	const comment = row[3];
-	const optional = csv_truthy_strings.includes(row[4]);
+	const optional = csv_truthy_strings.includes(row[4].toLowerCase());
 
 	const end_hours = Number(row[5]);
 	const end_minutes = Number(row[6]);
