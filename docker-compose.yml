@@ -23,7 +23,7 @@ services:
 
   celery:
     image: 'palanaeum:latest'
-    command: 'celery worker -A palanaeum'
+    command: 'celery -A palanaeum worker'
     build:
       context: .
     volumes:

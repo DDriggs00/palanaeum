@@ -1,20 +1,19 @@
-Django>4
-django-extensions>=2.1.4
-pytz>=2018.5
-celery>=4.2.1
-Werkzeug>=0.14.1
-bleach>=3.0.2
-psycopg2-binary>=2.7.6
-django-redis-cache>=1.8.1
-Pillow>=5.3.0
-sorl-thumbnail>=12.5
-raven>=6.9.0
-django-debug-toolbar>=1.11
-requests>=2.20
-requests-toolbelt>=0.8.0
-lxml>=4.2.5
-djangorestframework>=3.9
-markdown>=3.0.1
-django-filter>=2.0.0
-factory_boy>=2.11.0
-django-cors-headers>=2.4.0
+Django==6.0.1
+django-extensions==4.1
+pytz==2025.2 # used over zoneinfo because of common_timezones list
+celery==5.6.2
+Werkzeug==3.1.5 # debugger for django-extensions
+bleach==6.3.0
+psycopg[binary]==3.3.2 # database adapter for Django
+django-redis-cache==3.0.1
+Pillow==12.1.0 # image backend for sorl-thumbnail
+sorl-thumbnail==12.11.0
+raven==6.10.0 # logging for Django
+django-debug-toolbar==6.2.0
+requests==2.32.5
+lxml==6.0.2
+djangorestframework==3.16.1
+django-filter==25.2
+factory_boy==3.3.3
+django-cors-headers==4.9.0
+redis==3.5.3 # cache for django-redis-cache (note: only supports version <4) and sorl-thumbnail
